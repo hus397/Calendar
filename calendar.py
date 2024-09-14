@@ -8,11 +8,11 @@ screen.title("CALENDAR")
 
 def calendarshow():
   screen2 = tkinter.Tk()
-  screen2.geometry("600x1200")
+  screen2.geometry("800x800")
   screen2.title("Calendar")
   entryvalue = int(entry.get())
   thecalendar = calendar(entryvalue)
-  calendarlabel = tkinter.Text(screen2)
+  calendarlabel = tkinter.Text(screen2, height=600, padx = 150)
   calendarlabel.insert("1.0", thecalendar)
   calendarlabel.place(x=0, y=0)
   screen2.mainloop()
